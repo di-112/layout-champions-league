@@ -129,6 +129,14 @@ body {
   margin: 0 55px;
 }
 
+.menu a:hover {
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  transform: translateY(-10px);
+  padding: 0 0 20px;
+}
+
 .menu a:nth-child(2) {
   margin-right: 110px;
 }
@@ -143,10 +151,6 @@ body {
 
 .header__burger {
   display: none;
-}
-
-.menu__list {
-  overflow: auto;
 }
 
 @media (max-width: 700px) {
@@ -168,7 +172,7 @@ body {
     align-items: center;
     padding: 0 20px;
     justify-content: flex-end;
-    background: black;
+    background: rgb(22, 4, 56);
     z-index: 2;
   }
 
@@ -221,7 +225,7 @@ body {
 
   .menu__list a {
     display: block;
-    font-size: 30px;
+    font-size: 20px;
     padding: 0;
     margin: 0 0 40px 0;
   }
@@ -234,6 +238,7 @@ body {
     transition: all 0.5 ease 0s;
     padding: 120px 0;
     position: fixed;
+    overflow: auto;
     top: -100%;
     transform: translate(0, 0);
     left: 0;
@@ -333,7 +338,7 @@ body {
 
 .logo__phone:hover {
   transition: all 0.5s ease 0s;
-  background-color: rgba(100, 194, 158, 0.5);
+  background-color: rgba(32, 32, 32, 0.5);
 }
 
 .block2__img2 {
@@ -390,7 +395,7 @@ body {
 .block5 {
   text-align: center;
   background: #f7f7f7;
-  padding: 124px 20px 68px;
+  padding: 120px 20px 120px;
 }
 
 .block5__icon {
@@ -416,16 +421,6 @@ body {
   max-width: 1136px;
   margin: 0 auto;
   line-height: 34px;
-}
-
-.eclips {
-  display: flex;
-  justify-content: center;
-  margin: 104px -4.5px 0;
-}
-
-.eclips img {
-  padding: 0 4.5px;
 }
 
 .block6__item1 {
@@ -525,8 +520,14 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   background: #282f35;
-  letter-spacing: 2.8px;
+  letter-spacing: 2.8px;  
 }
+
+.btn:hover{ 
+  background: #64c29e;
+  transition:all 0.8s ease 0s;
+}
+
 @media (max-width: 520px) {
   .btn {
     padding: 20px 20px;
@@ -577,6 +578,16 @@ body {
   background: #64c29e;
   margin: 0 0 0 8px;
   color: #fff;
+  display: inline-block;
+  transform: rotate(0);
+  transition: all 0.5s ease 0s;
+}
+
+.btn_go:hover{
+  display: inline-block;
+  transform: rotate(360deg);
+  border-radius: 50px;
+  transition: all 0.5s ease 0s;
 }
 
 .footer {
