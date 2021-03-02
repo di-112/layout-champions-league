@@ -3,8 +3,8 @@ $(document).ready(function() {
 		$('.header__burger,.menu__list').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
-	$('.list__item').click( function(event) {
-		if(screen.width <= 700)$('.header__burger,.menu__list').removeClass('active');
+	$('.menu__item').click( function(event) {
+		if(screen.width <= 760)$('.header__burger,.menu__list').removeClass('active');
 	});
 	$(".menu__list").on("click","a", function (event) {
 		event.preventDefault();
